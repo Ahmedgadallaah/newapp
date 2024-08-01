@@ -1,5 +1,5 @@
 [project]
-name = "Maintenance Network Contract"
+name = "net_contract"
 authors = [
     { name = "ahmedgadallaah", email = "support@ahmed.com"}
 ]
