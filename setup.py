@@ -8,9 +8,9 @@ with open('requirements.txt') as f:
 from newapp import __version__ as version
 
 setup(
-        name='Maintenance Contract',
+        name='net_contract',
         version=version,
-        description='Maintenance Contract',
+        description='net_contract',
         author='Ahmed',
         author_email='info@qp.sa',
         packages=find_packages(),
