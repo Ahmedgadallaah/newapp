@@ -1,20 +1,21 @@
-[project]
-name = "Maintenance Network Contract"
-authors = [
-    { name = "ahmedgadallaah", email = "support@ahmed.com"}
-]
-description = "Enwan  network Contract"
-requires-python = ">=3.10"
-readme = "README.md"
-dynamic = ["version"]
-dependencies = [
-    # "frappe~=15.0.0" # Installed and managed by bench.
-]
+# -*- coding: utf-8 -*-
+from setuptools import setup, find_packages
 
-[build-system]
-requires = ["flit_core >=3.4,<4"]
-build-backend = "flit_core.buildapi"
+with open('requirements.txt') as f:
+        install_requires = f.read().strip().split('\n')
 
-# These dependencies are only installed when developer mode is enabled
-[tool.bench.dev-dependencies]
-# package_name = "~=1.1.0"
+# get version from __version__ variable in zatca2024/__init__.py
+from newapp import __version__ as version
+
+setup(
+        name='Maintenance Contract',
+        version=version,
+        description='Maintenance Contract',
+        author='Ahmed',
+        author_email='info@qp.sa',
+        packages=find_packages(),
+        zip_safe=False,
+        include_package_data=True,
+        install_requires=install_requires
+)
+
