@@ -6,7 +6,7 @@ with open('requirements.txt') as f:
 
 setup(
         name='net_contract',
-        version=version,
+        version='',
         description='net_contract',
         author='Ahmed',
         author_email='info@qp.sa',
