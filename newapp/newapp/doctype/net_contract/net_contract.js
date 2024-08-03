@@ -1,3 +1,4 @@
+
 frappe.ui.form.on('NetContract', {
     refresh: function(frm) {
         // Custom logic on form refresh
